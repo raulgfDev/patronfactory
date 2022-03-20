@@ -1,9 +1,6 @@
 package factory;
 
-import familiafacturas.Factura;
-import familiafacturas.FacturaGeneral;
-import familiafacturas.FacturaReducida;
-import familiafacturas.FacturaSuperReducida;
+import familiafacturas.*;
 
 public class FacturaFactory {
 
@@ -11,6 +8,7 @@ public class FacturaFactory {
 
         if (tipoFactura.toString().equals("GENERAL")) return new FacturaGeneral();
         else if(tipoFactura.toString().equals("REDUCIDA"))return new FacturaReducida();
+        else if(tipoFactura.toString().equals("LUJO")) return new FacturaLujo();
         return new FacturaSuperReducida();
     }
 }

@@ -4,5 +4,6 @@ public enum TipoFactura {
 
     GENERAL,
     REDUCIDA,
-    SUPER_REDUCIDA
+    SUPER_REDUCIDA,
+    LUJO
 }
