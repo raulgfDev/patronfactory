@@ -2,18 +2,9 @@ package familiafacturas;
 
 public abstract class Factura {
 
-    private int id;
     private double importe;
 
     public abstract double getConIVA();
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public double getImporte() {
         return importe;
